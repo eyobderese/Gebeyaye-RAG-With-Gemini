@@ -1,8 +1,11 @@
 import PyPDF2
+import os
 
 
 def load_data():
+    script_dir = os.path.dirname(__file__)
     pdf_path = '../context_Document/document.pdf'
+    pdf_path = os.path.join(script_dir, '../context_Document/document.pdf')
 
     text = ""
 
